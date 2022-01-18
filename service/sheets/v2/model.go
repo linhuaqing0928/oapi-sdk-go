@@ -357,7 +357,7 @@ func (s *OptionsResponse) MarshalJSON() ([]byte, error) {
 type Properties struct {
 	SheetId         string   `json:"sheetId,omitempty"`
 	Title           string   `json:"title,omitempty"`
-	Index           int      `json:"index,omitempty"`
+	Index           *int     `json:"index,omitempty"`
 	Hidden          bool     `json:"hidden,omitempty"`
 	FrozenRowCount  int      `json:"frozenRowCount,omitempty"`
 	FrozenColCount  int      `json:"frozenColCount,omitempty"`
